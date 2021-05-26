@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 backgroundImage: AssetImage('images/kevin.jpeg'),
@@ -37,6 +38,13 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   letterSpacing: 2.0,
                   color: Colors.teal.shade100
+                ),
+              ),
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
                 ),
               ),
               Card(
